@@ -2,7 +2,7 @@
       ESTLCAM SYNC & VERGLEICHS-TOOL - ANLEITUNG
 =========================================================
 
-Willkommen in der Estlcam Toolverwaltung! 
+Willkommen in der Estlcam Toolverwaltung (v4.1)! 
 Dieses Programm hilft dir, Werkzeuglisten (Tools.dat) und Postprozessoren sicher zwischen verschiedenen Computern (z. B. via OneDrive) zu synchronisieren und Änderungen exakt nachzuverfolgen.
 
 ---------------------------------------------------------
@@ -36,7 +36,8 @@ Postprozessoren sind Textdateien. Hier kannst du zwei Versionen Zeile für Zeile
   ROT: Diese Zeile wurde gelöscht oder neu hinzugefügt.
 
 ---------------------------------------------------------
-ALLGEMEINE HINWEISE
+ALLGEMEINE HINWEISE & UPDATES
 ---------------------------------------------------------
-- Wenn du horizontal scrollst (Shift + Mausrad oder Trackpad), greift der "Scroll-Booster" für schnelles Navigieren durch viele Parameter.
-- Ein Klick auf "Estlcam starten" öffnet dein Estlcam direkt aus diesem Tool heraus.
+- Scroll-Booster: Wenn du horizontal scrollst (Shift + Mausrad oder Trackpad), scrollt die Tabelle extra schnell. Perfekt für viele Werkzeugparameter!
+- Auto-Updater: Das Programm sucht beim Start im Hintergrund nach Updates auf GitHub. Gibt es eine neue Version, wirst du gefragt, ob du sie (inklusive dieser Readme und dem Changelog) herunterladen möchtest.
+- Konfiguration: Deine gespeicherten Pfade werden sicher und Windows-konform im Hintergrund unter "C:\Users\DeinName\AppData\Roaming\EstlcamSync" gespeichert.

@@ -2,10 +2,18 @@
                        CHANGELOG
 =========================================================
 
-VERSION 4.0 (Aktuelles Major-Update)
+VERSION 4.1
+---------------------------------------------------------
+[NEU] Auto-Updater via GitHub integriert! Das Tool prüft beim Start im Hintergrund auf neue Versionen und kann das Python-Skript sowie Readme & Changelog per Knopfdruck selbstständig aktualisieren und neustarten.
+[SYSTEM] Pfad-Konfiguration ("last_paths.json") wird nun sicher und Windows-konform im %APPDATA% Verzeichnis gespeichert. Dadurch gibt es keine Zugriffsfehler mehr, egal wo die App ausgeführt wird.
+[UX] "Scroll-Booster" hinzugefügt: Horizontales Scrollen (Trackpad oder Shift+Mausrad) in breiten Tabellen ist nun deutlich schneller und flüssiger.
+[FIX] Fehler behoben, bei dem die Tabellenspalten im Werkzeug-Vergleich extrem zusammengequetscht wurden, wenn man den Parametersatz gewechselt hat.
+
+
+VERSION 4.0 (Major-Update)
 ---------------------------------------------------------
 [NEU] Postprozessor-Vergleich:
-- Brandneue Registerkarte zum zeilenweisen Vergleichen von Postprozessoren.
+- Brandneue Registerkarte zum zeilenweisen Vergleichen von Postprozessoren (Diff-Analyse).
 - Unterschiede (geändert, gelöscht, hinzugefügt) werden farblich hervorgehoben.
 - Rechtsklick-Integration in Tab 1 zum direkten Laden der PP-Dateien.
 
@@ -16,14 +24,12 @@ VERSION 4.0 (Aktuelles Major-Update)
 - Leere Parameter (NaN) bei Bohrern etc. werden nun intelligent ignoriert und verursachen keine falschen Warnungen mehr.
 
 [UI & UX] Modernes Design & Workflow:
-- Neues, sauberes "Modern Flat Light Theme" integriert (feste Farbschemas entfernt).
+- Neues, sauberes "Modern Flat Light Theme" integriert.
 - Responsive Layout: Die Tabellen in Registerkarte 1 nutzen nun automatisch die gesamte Monitorgröße aus.
-- Synchronisiertes Scrollen: Die Tabellen im Vergleichs-Modus scrollen horizontal exakt synchron.
-- Scroll-Booster eingebaut: Horizontales Scrollen per Trackpad/Mausrad wurde massiv beschleunigt.
+- Synchronisiertes Scrollen: Die Tabellen im Vergleichs-Modus scrollen horizontal exakt synchron miteinander.
 
 [BUGFIXES] Stabilität:
 - Fehler beim App-Start ("KeyboardInterrupt" durch versteckte Popups) behoben. Popups erscheinen nun verzögert im Vordergrund.
-- Leere JSON-Pfade nach einem Absturz werden sauber abgefangen.
 
 
 VERSION 3.0
@@ -31,7 +37,7 @@ VERSION 3.0
 - Integration der Estlcam Binär-Datei-Auslesung (.dat) per gzip und struct.
 - Filterung der Werkzeuge nach Material-Parametersätzen (Holz, POM, Alu etc.).
 - Farbliche Hervorhebung von Unterschieden.
-- Rechtsklick-Kontextmenü für schnelles Laden.
+- Rechtsklick-Kontextmenü für schnelles Laden in den Vergleich.
 
 VERSION 2.0
 ---------------------------------------------------------
