@@ -1,0 +1,44 @@
+=========================================================
+                       CHANGELOG
+=========================================================
+
+VERSION 4.0 (Aktuelles Major-Update)
+---------------------------------------------------------
+[NEU] Postprozessor-Vergleich:
+- Brandneue Registerkarte zum zeilenweisen Vergleichen von Postprozessoren.
+- Unterschiede (geändert, gelöscht, hinzugefügt) werden farblich hervorgehoben.
+- Rechtsklick-Integration in Tab 1 zum direkten Laden der PP-Dateien.
+
+[UPGRADE] Werkzeug-Vergleich (Tools.dat):
+- Layout optimiert: Tabellen sind nun übereinander (volle Breite) für bessere Lesbarkeit.
+- ALL-IN-Auslesung: Es werden nun ALLE Parameter aus der Estlcam-Datei extrahiert (Eintauchwinkel, Querzustellung etc.), nicht nur die wichtigsten 6.
+- Zell-Hervorhebung: Geänderte Parameter innerhalb einer orangenen Zeile werden gezielt mit » Wert « markiert.
+- Leere Parameter (NaN) bei Bohrern etc. werden nun intelligent ignoriert und verursachen keine falschen Warnungen mehr.
+
+[UI & UX] Modernes Design & Workflow:
+- Neues, sauberes "Modern Flat Light Theme" integriert (feste Farbschemas entfernt).
+- Responsive Layout: Die Tabellen in Registerkarte 1 nutzen nun automatisch die gesamte Monitorgröße aus.
+- Synchronisiertes Scrollen: Die Tabellen im Vergleichs-Modus scrollen horizontal exakt synchron.
+- Scroll-Booster eingebaut: Horizontales Scrollen per Trackpad/Mausrad wurde massiv beschleunigt.
+
+[BUGFIXES] Stabilität:
+- Fehler beim App-Start ("KeyboardInterrupt" durch versteckte Popups) behoben. Popups erscheinen nun verzögert im Vordergrund.
+- Leere JSON-Pfade nach einem Absturz werden sauber abgefangen.
+
+
+VERSION 3.0
+---------------------------------------------------------
+- Integration der Estlcam Binär-Datei-Auslesung (.dat) per gzip und struct.
+- Filterung der Werkzeuge nach Material-Parametersätzen (Holz, POM, Alu etc.).
+- Farbliche Hervorhebung von Unterschieden.
+- Rechtsklick-Kontextmenü für schnelles Laden.
+
+VERSION 2.0
+---------------------------------------------------------
+- Postprozessor-Sync hinzugefügt.
+- JSON-Speicherung für Pfade integriert.
+- Initialen und User-Erkennung für automatische Dateinamen.
+
+VERSION 1.0
+---------------------------------------------------------
+- Grundgerüst für Dateiaustausch (Estlcam zu OneDrive) erstellt.
