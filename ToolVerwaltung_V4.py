@@ -14,10 +14,12 @@ import itertools
 import urllib.request
 import re
 
+#Author Nico-RDF
+
 # =========================================================
 # APP KONFIGURATION & AUTO-UPDATER
 # =========================================================
-__version__ = "4.0"
+__version__ = "4.1"
 
 # HIER DEINE GITHUB RAW URL EINTRAGEN:
 # (Gehe auf GitHub auf deine .pyw Datei -> Klicke auf "Raw" -> Kopiere den Link)
@@ -1242,4 +1244,5 @@ class FileSyncGUI:
 if __name__ == "__main__":
     root = tk.Tk()
     app = FileSyncGUI(root)
+
     root.mainloop()
